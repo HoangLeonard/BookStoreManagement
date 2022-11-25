@@ -1,6 +1,5 @@
 public class BookStore  {
     private Account account;
-    private DatabaseConnector dbConnect;
     private BookSearchEngine bookSearchEngine;
     class BookSearchEngine{
         /*Nhiệm vụ của search engine là sinh ra câu truy vấn phù hợp với yêu cầu của Client Account
