@@ -33,7 +33,7 @@ CREATE TABLE `Account`
 (
     `AccountID`   char(10)    NOT NULL,
     `UserAccount` varchar(20) NOT NULL,
-    `Password`    varchar(80) NOT NULL,
+    `Password`    varchar(50) NOT NULL,
     `Type`        varchar(10) NOT NULL,
     `Name`        char(30) NOT NULL,
     `Phone`       char(15) NOT NULL,
@@ -215,6 +215,8 @@ INSERT INTO `Account` (`AccountID`, `UserAccount`, `Password`, `Type`, `Name`, `
 ('CID05', 'CID05client', 497644, 'client', 'Phạm Văn Vinh', '0126459679', '45 Trưng Vương, Hà Nội', 'phamvanvinh_UID08@gmail.com'),
 ('AID01', 'AID01admin', 806967, 'admin', 'Nguyễn Xuân Thắng', '0862452688', '36 Miếu Đầm, Hà Nội', 'nguyenxuanthang_UID09@gmail.com'),
 ('AID02', 'AID02admin', 144107, 'admin', 'Hoàng Phúc Nhật Minh', '0372827009', '182 Lương Thế Vinh, Hà Nội', 'hoangphucnhatminh_UID10@gmail.com');
+update account set Password = PASSWORD(account.Password);
+
 -- dumping data to Staff
 INSERT INTO `Staff` (`StaffID`, `BasicSalary`, `Office`, `Date`) VALUES
 ('SID01', 7360000, 'manage', '2023-09-05'),

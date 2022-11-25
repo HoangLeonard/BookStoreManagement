@@ -1,4 +1,4 @@
-import java.io.FileNotFoundException;
+
 import java.sql.*;
 public class DatabaseConnector {
     public static String JDBC_DRIVER = "com.mysql.jdbc.Driver";
@@ -7,6 +7,7 @@ public class DatabaseConnector {
     private String password = "";
     protected Connection connection;
     protected Statement stmt;
+
 
     public DatabaseConnector(String user, String password) {
         try {

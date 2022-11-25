@@ -1,29 +1,27 @@
-import java.util.Arrays;
-import java.util.Date;
+import java.util.Hashtable;
+import java.time.*;
 
 public class Bill {
-    private String billID;
+    private final String billID;
     private final ClientAccount account;
     private final StaffAccount management;
-    private final BookPackage[] books;
-    private Date invoiceDate;
+    private final Hashtable<Book,Integer> items;
+    private final LocalDate invoiceDate;
 
     private String status = "";
 
-    public Bill(String billID, ClientAccount account, StaffAccount management, BookPackage[] books, Date invoiceDate) {
+    public Bill(String billID, ClientAccount account,
+                StaffAccount management, Hashtable<Book, Integer> items) {
         this.billID = billID;
         this.account = account;
         this.management = management;
-        this.books = books;
-        this.invoiceDate = invoiceDate;
+        this.items = items;
+        this.invoiceDate = LocalDate.now();
+        this.status = "delivering";
     }
 
     public String getBillID() {
         return billID;
-    }
-
-    public void setBillID(String billID) {
-        this.billID = billID;
     }
 
     public ClientAccount getAccount() {
@@ -34,16 +32,12 @@ public class Bill {
         return management;
     }
 
-    public BookPackage[] getBooks() {
-        return books;
+    public Hashtable<Book, Integer> getItems() {
+        return items;
     }
 
-    public Date getInvoiceDate() {
+    public LocalDate getInvoiceDate() {
         return invoiceDate;
-    }
-
-    public void setInvoiceDate(Date invoiceDate) {
-        this.invoiceDate = invoiceDate;
     }
 
     public String getStatus() {
@@ -60,9 +54,9 @@ public class Bill {
                 "billID='" + billID + '\'' +
                 ", account=" + account +
                 ", management=" + management +
-                ", books=" + Arrays.toString(books) +
+                ", items=" + items +
                 ", invoiceDate=" + invoiceDate +
+                ", status='" + status + '\'' +
                 '}';
     }
-
 }

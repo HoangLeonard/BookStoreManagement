@@ -8,8 +8,12 @@ public abstract class Account {
     private String name;
     private String phone;
     private String address;
+    private String email;
 
-    public Account(String accountID, String userAccount, String password, String type, String name, String phone, String address) {
+    public Account(){}
+
+    public Account(String accountID, String userAccount, String password, String type,
+                   String name, String phone, String address, String email) {
         this.accountID = accountID;
         this.userAccount = userAccount;
         this.password = password;
@@ -17,6 +21,7 @@ public abstract class Account {
         this.name = name;
         this.phone = phone;
         this.address = address;
+        this.email = email;
     }
 
     public static boolean isValidPassword(String password) {
@@ -115,6 +120,14 @@ public abstract class Account {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
     }
 
     @Override

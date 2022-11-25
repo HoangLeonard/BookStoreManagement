@@ -7,8 +7,6 @@ public class Book {
     private int quantityAvailable;
     private double price;
 
-    public void display() {}
-
     public Book(String bookID, String name, String author, String publisher, String categories, int quantityAvailable, double price) {
         this.bookID = bookID;
         this.name = name;
@@ -73,5 +71,20 @@ public class Book {
 
     public void setPrice(double price) {
         this.price = price;
+    }
+
+    public void display() {}
+
+    @Override
+    public String toString() {
+        return "Book{" +
+                "bookID='" + bookID + '\'' +
+                ", name='" + name + '\'' +
+                ", author='" + author + '\'' +
+                ", publisher='" + publisher + '\'' +
+                ", categories='" + categories + '\'' +
+                ", quantityAvailable=" + quantityAvailable +
+                ", price=" + price +
+                '}';
     }
 }

@@ -1,31 +1,23 @@
 public class BookStore  {
     private Account account;
-    private BookSearchEngine bookSearchEngine;
-    class BookSearchEngine{
-        /*Nhiệm vụ của search engine là sinh ra câu truy vấn phù hợp với yêu cầu của Client Account
-        * */
-        String nameBook;
-        String author;
-        String publisher;
-        String [] categories;
-        String query;
+    private String query;
+
+    public void creatAccount(String accountID, String userAccount, String password,
+                             String type, String name, String phone, String address) {
     }
 
-    public boolean signUp() {
-        return false;
-    }
-
-    public boolean signIn() {
-        return false;
-    }
-
-    public boolean logOut() {
-        return false;
-    }
-
-    public void resetPassword() {
+    public void forgetPassword(String userAccount, String contact) {
 
     }
+
+    public void signIn(String userAccount, String password) {
+
+    }
+
+    public void logOut() {
+
+    }
+
 
 
 }
