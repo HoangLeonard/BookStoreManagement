@@ -21,9 +21,9 @@ public class ClientAccount extends Account {
         order.remove(b);
     }
 
-    public Bill toBill() {
-
-    }
+//    public Bill toBill() {
+//
+//    }
 
 
 }
