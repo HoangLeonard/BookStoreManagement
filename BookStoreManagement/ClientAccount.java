@@ -1,16 +1,17 @@
+import java.time.LocalDate;
 import java.util.Hashtable;
 import java.util.LinkedList;
 import java.util.Queue;
 
 public class ClientAccount extends Account {
     private Hashtable<Book,Integer> order;
-    private Queue<Bill> deliveringBill;
+    private Queue<Bill> bills;
 
     public ClientAccount(String accountID, String userAccount, String password,
                          String name, String phone, String address, String email) {
         super(accountID, userAccount, password, "client", name, phone, address, email);
         order = new Hashtable<>();
-        deliveringBill = new LinkedList<>();
+        bills = new LinkedList<>();
     }
 
     public void addToOrder(Book b, int quantity) {
@@ -21,9 +22,11 @@ public class ClientAccount extends Account {
         order.remove(b);
     }
 
-//    public Bill toBill() {
-//
-//    }
+    public void toBill(String deliveryID) {
+        String billId = String.format("BiID%04d", DatabaseConnector.getBiID());
+        bills.add(new Bill(billId, this, "CID006", order, LocalDate.now(), deliveryID));
+        order = new Hashtable<>();
+    }
 
 
 }

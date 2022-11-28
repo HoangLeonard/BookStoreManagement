@@ -4,6 +4,7 @@ public class BookStore  {
 
     public void creatAccount(String accountID, String userAccount, String password,
                              String type, String name, String phone, String address) {
+
     }
 
     public void forgetPassword(String userAccount, String contact) {

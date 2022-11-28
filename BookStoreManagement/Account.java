@@ -141,9 +141,4 @@ public abstract class Account {
                 ", address='" + address + '\'' +
                 '}';
     }
-
-//    public static void main(String[] args) {
-//        String test = "nGuyễn    tHị     hảI YếN";
-//        System.out.println(Account.standardizeName(test));
-//    }
 }
