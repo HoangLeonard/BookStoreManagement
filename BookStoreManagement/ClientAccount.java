@@ -12,6 +12,8 @@ public class ClientAccount extends Account {
         super(accountID, userAccount, password, "client", name, phone, address, email);
         order = new Hashtable<>();
         bills = new LinkedList<>();
+
+
     }
 
     public void addToOrder(Book b, int quantity) {
@@ -26,6 +28,7 @@ public class ClientAccount extends Account {
         String billId = String.format("BiID%04d", DatabaseConnector.getBiID());
         bills.add(new Bill(billId, this, "CID006", order, LocalDate.now(), deliveryID));
         order = new Hashtable<>();
+
     }
 
 

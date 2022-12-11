@@ -40,7 +40,7 @@ CREATE TABLE `Account`
     `Type`        varchar(10) NOT NULL,
     `Name`        char(30) NOT NULL,
     `Phone`       char(15) NOT NULL,
-    `Address`     varchar(40) DEFAULT NULL,
+    `Address`     varchar(40) NOT NULL,
     `Email`       varchar(40) DEFAULT NULL,
     PRIMARY KEY (AccountID)
 ) ENGINE = InnoDB

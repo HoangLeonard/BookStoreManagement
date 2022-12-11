@@ -3,7 +3,8 @@ public class DatabaseConnector {
     public static String JDBC_DRIVER = "com.mysql.jdbc.Driver";
     public static String DB_URL = "jdbc:mysql://Localhost/bookstoremanagement";
     private final String user;
-    protected Connection connection = null;
+
+    private Connection connection = null;
     private static int nextCID = 0; //the next client account id
     private static int nextAID = 0;
     private static int nextSID = 0;
@@ -137,18 +138,6 @@ public class DatabaseConnector {
     public static int getPID() {
         nextPID += 1;
         return nextPID;
-    }
-
-
-    public static void main(String[] args) {
-        updateID();
-        System.out.println(getBID());
-        System.out.println(getAID());
-        System.out.println(getSID());
-        System.out.println(getBiID());
-        System.out.println(getCID());
-        System.out.println(getPID());
-        System.out.println(getAuID());
     }
 
 }
