@@ -1,0 +1,199 @@
+JFDML JFormDesigner: "8.0.0.0.194" Java: "11.0.13" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+			name: "this"
+			"defaultCloseOperation": 3
+			"minimumSize": new java.awt.Dimension( 800, 600 )
+			"background": sfield java.awt.Color white
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.FlowLayout ) ) {
+				name: "panel_Header"
+				"preferredSize": new java.awt.Dimension( 658, 50 )
+				"background": new java.awt.Color( 0, 102, 102, 255 )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label_Logo"
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/View/Icon/book.png" )
+					"text": "BOKKOB"
+					"font": new java.awt.Font( "Segoe UI", 1, 18 )
+					"preferredSize": new java.awt.Dimension( 112, 40 )
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "textField_Search"
+					"font": new java.awt.Font( "Calibri", 0, 16 )
+					"disabledTextColor": new java.awt.Color( 204, 204, 204, 255 )
+					"preferredSize": new java.awt.Dimension( 320, 40 )
+					"toolTipText": "put your search query"
+					"horizontalAlignment": 2
+					"background": sfield java.awt.Color darkGray
+					"scrollOffset": 9
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "button_Search"
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/View/Icon/search.png" )
+					"horizontalTextPosition": 4
+					"toolTipText": "search"
+					"foreground": &Color0 new java.awt.Color( 0, 102, 102, 255 )
+					"background": &Color1 new java.awt.Color( 0, 102, 102, 255 )
+					"minimumSize": &Dimension0 new java.awt.Dimension( 10, 10 )
+					"preferredSize": &Dimension1 new java.awt.Dimension( 40, 40 )
+					"iconTextGap": 0
+					"alignmentY": 0.0f
+					"borderPainted": false
+					"opaque": false
+					"actionCommand": "search"
+				} )
+				add( new FormComponent( "com.jformdesigner.designer.wrapper.HSpacer" ) {
+					name: "hSpacer1"
+					"preferredSize": new java.awt.Dimension( 60, 10 )
+					"autoscrolls": true
+					"foreground": new java.awt.Color( 0, 102, 102, 255 )
+					"background": new java.awt.Color( 0, 102, 102, 255 )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "button_Order"
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/View/Icon/Online-Shopping-icon.png" )
+					"horizontalTextPosition": 4
+					"toolTipText": "search"
+					"foreground": #Color0
+					"background": #Color1
+					"minimumSize": #Dimension0
+					"preferredSize": #Dimension1
+					"iconTextGap": 0
+					"alignmentY": 0.0f
+					"borderPainted": false
+					"opaque": false
+					"actionCommand": "order"
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "button_Info"
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/View/Icon/Male-user-info-icon.png" )
+					"horizontalTextPosition": 4
+					"toolTipText": "search"
+					"foreground": #Color0
+					"background": #Color1
+					"minimumSize": #Dimension0
+					"preferredSize": #Dimension1
+					"iconTextGap": 0
+					"alignmentY": 0.0f
+					"borderPainted": false
+					"opaque": false
+					"actionCommand": "info"
+				} )
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "North"
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.FlowLayout ) {
+				"hgap": 10
+				"vgap": 10
+			} ) {
+				name: "panel_books"
+				"background": sfield java.awt.Color darkGray
+				"autoscrolls": true
+				"componentOrientation": sfield java.awt.ComponentOrientation LEFT_TO_RIGHT
+				"nextFocusableComponent": sfield com.jformdesigner.model.FormObject NULL_VALUE
+				"focusTraversalPolicyProvider": true
+				"focusCycleRoot": true
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "Center"
+			} )
+			menuBar: new FormContainer( "javax.swing.JMenuBar", new FormLayoutManager( class javax.swing.JMenuBar ) ) {
+				name: "menuBar1"
+				"background": sfield java.awt.Color white
+				"foreground": sfield java.awt.Color darkGray
+				add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+					name: "menu_Account"
+					"text": "Account"
+					"foreground": sfield java.awt.Color darkGray
+					"opaque": true
+					"background": sfield java.awt.Color white
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/View/Icon/account.png" )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuItem_CreateNewAccount"
+						"text": "Create new account"
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuItem_RevokeAccount"
+						"text": "Revoke account"
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuItem_ShowAccountInfo"
+						"text": "Show account info"
+					} )
+				} )
+				add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+					name: "menu_Book"
+					"text": "Book"
+					"foreground": sfield java.awt.Color darkGray
+					"opaque": true
+					"background": sfield java.awt.Color white
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/View/Icon/book-icon.png" )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuItem_Addnewbook"
+						"text": "Add new book"
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuItem_UpdateBook"
+						"text": "Update book"
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuItem_DeleteBook"
+						"text": "Delete book"
+					} )
+				} )
+				add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+					name: "menu3"
+					"text": "Author"
+					"foreground": sfield java.awt.Color darkGray
+					"opaque": true
+					"background": sfield java.awt.Color white
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/View/Icon/text-x-authors-icon.png" )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuItem9"
+						"text": "Add new author"
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuItem10"
+						"text": "Update new author"
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuItem11"
+						"text": "Delete author"
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuItem12"
+						"text": "Show author info"
+					} )
+				} )
+				add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+					name: "menu_Publisher"
+					"text": "Publisher"
+					"foreground": sfield java.awt.Color darkGray
+					"opaque": true
+					"background": sfield java.awt.Color white
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/View/Icon/Publisher-icon.png" )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuItem_AddPublisher"
+						"text": "Add publisher"
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuItem_ModifyPublisher"
+						"text": "Modify publisher"
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuItem_DeletePublisher"
+						"text": "Delete publisher"
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuItem_ShowPublisher"
+						"text": "Show publisher info"
+					} )
+				} )
+			}
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 865, 730 )
+		} )
+	}
+}

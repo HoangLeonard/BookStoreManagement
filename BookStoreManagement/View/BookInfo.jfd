@@ -1,0 +1,149 @@
+JFDML JFormDesigner: "8.0.0.0.194" Java: "11.0.13" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JDialog", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq {par l {seq l {space :p:74:p, comp button1:::p::p, space :p:64:p}, seq l {space :p:16:p, par l {seq {comp label_img:::p:170:p, space :0:0:x}, seq {comp label_Price:::::x, space :::p, comp spinner_Quantity:::p::p}}, space u:::p}}, par l {comp label5:::p:306:p, seq {space :6:6:p, comp scrollPane1:::p:295:p}}, space ::14:x}}"
+			"$verticalGroup": "par l {seq t {par t {seq l {space :p:18:p, comp label5:::p::p, space :::p, comp scrollPane1:::::x, space :p:12:p}, seq t {space :p:14:p, comp label_img::::203:x, space :::p, par t {comp spinner_Quantity:::p::p, comp label_Price:::p:24:p}, space s:::p, comp button1:::p::p}}, space :p:18:p}}"
+		} ) {
+			name: "this"
+			"background": &Color0 new java.awt.Color( 255, 255, 255, 255 )
+			"foreground": &Color1 new java.awt.Color( 0, 102, 102, 255 )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label_img"
+				"background": sfield java.awt.Color darkGray
+				"opaque": true
+				"horizontalAlignment": 0
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridBagLayout ) {
+				"$columnSpecs": "91, 201"
+				"$rowSpecs": "0, 0, 0, 0, 0"
+				"$hGap": 10
+				"$vGap": 19
+				"$alignLeft": true
+				"$alignTop": true
+			} ) {
+				name: "label5"
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label_BookID"
+					"text": "BookID"
+					"foreground": #Color1
+					"font": &Font0 new java.awt.Font( "Calibri", 1, 16 )
+					"background": #Color0
+					"verticalAlignment": 3
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "textField_BookID"
+					"caretColor": sfield java.awt.Color darkGray
+					"foreground": sfield java.awt.Color darkGray
+					"font": &Font1 new java.awt.Font( "Calibri", 0, 14 )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+					"gridx": 1
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label_BookName"
+					"text": "Book Name"
+					"foreground": #Color1
+					"font": #Font0
+					"background": #Color0
+					"verticalAlignment": 3
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+					"gridy": 1
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "textField_BookName"
+					"caretColor": sfield java.awt.Color darkGray
+					"foreground": sfield java.awt.Color darkGray
+					"font": #Font1
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+					"gridx": 1
+					"gridy": 1
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label_Author"
+					"text": "Author"
+					"foreground": #Color1
+					"font": #Font0
+					"background": #Color0
+					"verticalAlignment": 3
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+					"gridy": 2
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "textField_Author"
+					"caretColor": sfield java.awt.Color darkGray
+					"foreground": sfield java.awt.Color darkGray
+					"font": #Font1
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+					"gridx": 1
+					"gridy": 2
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label_Publisher"
+					"text": "Publisher"
+					"foreground": #Color1
+					"font": #Font0
+					"background": #Color0
+					"verticalAlignment": 3
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+					"gridy": 3
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "textField_Publisher"
+					"caretColor": sfield java.awt.Color darkGray
+					"foreground": sfield java.awt.Color darkGray
+					"font": #Font1
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+					"gridx": 1
+					"gridy": 3
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label_Categories"
+					"text": "Categories:"
+					"foreground": #Color1
+					"font": #Font0
+					"background": #Color0
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+					"gridy": 4
+				} )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label_Price"
+				"text": "Price: "
+				"foreground": #Color1
+				"font": #Font0
+				"background": #Color0
+				"verticalAlignment": 3
+			} )
+			add( new FormComponent( "javax.swing.JSpinner" ) {
+				name: "spinner_Quantity"
+				"font": new java.awt.Font( "Calibri", 0, 11 )
+				"background": sfield java.awt.Color darkGray
+				"model": new javax.swing.SpinnerNumberModel {
+					minimum: 0
+				}
+				"foreground": new java.awt.Color( 0, 102, 102, 255 )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button1"
+				"icon": new com.jformdesigner.model.SwingIcon( 0, "/View/Icon/Shopping-cart-add-icon.png" )
+				"toolTipText": "add to order"
+				"background": sfield java.awt.Color darkGray
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "addToOrder", true ) )
+			} )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane1"
+				add( new FormComponent( "javax.swing.JTextArea" ) {
+					name: "textArea_Categories"
+					"caretColor": sfield java.awt.Color darkGray
+					"foreground": sfield java.awt.Color darkGray
+					"font": new java.awt.Font( "Calibri", 2, 14 )
+				} )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 5, 0 )
+			"size": new java.awt.Dimension( 520, 360 )
+		} )
+	}
+}

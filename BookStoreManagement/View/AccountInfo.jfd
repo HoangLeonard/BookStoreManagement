@@ -1,0 +1,178 @@
+JFDML JFormDesigner: "8.0.0.0.194" Java: "11.0.13" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq l {space :p:29:p, par l {comp separator1:::p:352:p, seq l {par l {comp label_Password:::p:106:p, comp label_Account::t:p:106:p}, space :::p, par l {comp textField_Account:::p:204:p, seq {comp textField_Password:::p:204:p, space s:::p, comp button_ChangePW:::p:39:p}}}, seq l {comp label_AID:::p:106:p, space :::p, comp textField_AID:::p:204:p}, seq l {comp label_Email:::p:106:p, space :::p, comp textField_Email:::p:377:p}, seq l {comp label_Address:::p:106:p, space :::p, comp textField_Address:::p:377:p}, seq l {comp label_Phone:::p:106:p, space :::p, comp textField_Phone:::p:204:p}, par t:l::p {seq l {comp label_Username:::p:106:p, space :::p, comp textField_Username:::::x}, seq l {comp label_Type:::p:106:p, space :::p, comp textField_Type:::p:204:p}}, seq {space :15:15:p, comp label9:::p:228:p}, seq {comp button_Logout:::p:127:p, space s:::p, comp button_Update:::p:112:p, space s:::p, comp button_Done:::p:114:p}}, space ::25:x}}"
+			"$verticalGroup": "par l {seq t {space :::p, comp label9:::p:23:p, space :::p, comp separator1:::p:3:p, space :p:8:p, par b {comp label_AID::b:::p, comp textField_AID::b:::p}, space :::p, par b {comp textField_Account::b:p::p, comp label_Account::b:p::p}, space :::p, par b {comp textField_Password::b:p::p, comp label_Password::b:p::p, comp button_ChangePW::b:p:37:p}, space :::p, par b {comp textField_Type::b:p::p, comp label_Type::b:p::p}, space :::p, par b {comp label_Username::b:p::p, comp textField_Username::b:p::p}, space :::p, par b {comp textField_Phone::b:p::p, comp label_Phone::b:p::p}, space :::p, par b {comp textField_Address::b:p::p, comp label_Address::b:p::p}, space :p::p, par b {comp textField_Email::b:p::p, comp label_Email::b:p::p}, space :p:20:p, par l {comp button_Logout::t:p:37:p, par b {comp button_Update::b:p::p, comp button_Done::b:p::p}}, space ::8:x}}"
+		} ) {
+			name: "this"
+			"background": new com.jformdesigner.model.SwingColor( "Panel.background" )
+			"font": new java.awt.Font( "Calibri", 0, 12 )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label_AID"
+				"text": "Account id"
+				"background": sfield java.awt.Color darkGray
+				"foreground": &Color0 new java.awt.Color( 0, 153, 204, 255 )
+				"font": &Font0 new java.awt.Font( "Calibri", 0, 18 )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField_AID"
+				"background": sfield java.awt.Color darkGray
+				"foreground": &Color1 new java.awt.Color( 204, 204, 204, 255 )
+				"editable": false
+				"enabled": false
+				"font": &Font1 new java.awt.Font( "Calibri", 0, 20 )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label_Account"
+				"text": "User account"
+				"background": sfield java.awt.Color darkGray
+				"foreground": #Color0
+				"font": #Font0
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField_Account"
+				"background": sfield java.awt.Color darkGray
+				"foreground": #Color1
+				"editable": false
+				"enabled": false
+				"font": #Font1
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label_Password"
+				"text": "Password"
+				"background": sfield java.awt.Color darkGray
+				"foreground": #Color0
+				"font": #Font0
+			} )
+			add( new FormComponent( "javax.swing.JPasswordField" ) {
+				name: "textField_Password"
+				"background": sfield java.awt.Color darkGray
+				"foreground": #Color1
+				"editable": false
+				"enabled": false
+				"font": #Font1
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label_Type"
+				"text": "Type account"
+				"background": sfield java.awt.Color darkGray
+				"foreground": #Color0
+				"font": #Font0
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField_Type"
+				"background": sfield java.awt.Color darkGray
+				"foreground": #Color1
+				"editable": false
+				"enabled": false
+				"font": #Font1
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label_Username"
+				"text": "User name"
+				"background": sfield java.awt.Color darkGray
+				"foreground": #Color0
+				"font": #Font0
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField_Username"
+				"background": sfield java.awt.Color darkGray
+				"foreground": #Color1
+				"font": #Font1
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label_Address"
+				"text": "Address"
+				"background": sfield java.awt.Color darkGray
+				"foreground": #Color0
+				"font": #Font0
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField_Address"
+				"background": sfield java.awt.Color darkGray
+				"foreground": #Color1
+				"font": #Font1
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label_Phone"
+				"text": "Phone"
+				"background": sfield java.awt.Color darkGray
+				"foreground": #Color0
+				"font": #Font0
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField_Phone"
+				"background": sfield java.awt.Color darkGray
+				"foreground": #Color1
+				"font": #Font1
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label_Email"
+				"text": "Email"
+				"background": sfield java.awt.Color darkGray
+				"foreground": #Color0
+				"font": #Font0
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField_Email"
+				"background": sfield java.awt.Color darkGray
+				"foreground": #Color1
+				"font": #Font1
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button_Update"
+				"text": "update"
+				"actionCommand": "update"
+				"background": sfield java.awt.Color lightGray
+				"foreground": &Color2 new java.awt.Color( 0, 102, 102, 255 )
+				"font": #Font1
+				"verticalAlignment": 3
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "controler", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button_Done"
+				"text": "done"
+				"actionCommand": "done"
+				"background": sfield java.awt.Color lightGray
+				"foreground": new java.awt.Color( 0, 102, 102, 255 )
+				"font": #Font1
+				"verticalAlignment": 3
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "controler", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label9"
+				"text": "Account infomation"
+				"background": sfield java.awt.Color darkGray
+				"foreground": new java.awt.Color( 0, 102, 51, 255 )
+				"font": #Font1
+				"verticalAlignment": 3
+			} )
+			add( new FormComponent( "javax.swing.JSeparator" ) {
+				name: "separator1"
+				"preferredSize": new java.awt.Dimension( 300, 3 )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button_ChangePW"
+				"icon": new com.jformdesigner.model.SwingIcon( 0, "/View/Icon/pencil-icon.png" )
+				"actionCommand": "changepw"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "controler", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button_Logout"
+				"text": "log out"
+				"actionCommand": "log out"
+				"background": sfield java.awt.Color lightGray
+				"foreground": #Color2
+				"font": #Font1
+				"icon": new com.jformdesigner.model.SwingIcon( 0, "/View/Icon/turn-off.png" )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "controler", true ) )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 545, 480 )
+		} )
+	}
+}

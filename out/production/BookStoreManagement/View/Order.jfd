@@ -1,0 +1,103 @@
+JFDML JFormDesigner: "8.0.0.0.194" Java: "11.0.13" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq l {space :p:24:p, par l {seq {comp label1:::p:147:p, space ::123:x, comp button_remove:::p:39:p, space u:::p, comp button_view:::p:38:p, space :p:170:p}, seq l {par t {seq {comp hSpacer1:::p:231:p, space :::p, comp label_totalPrice:::p:129:p, space s:::p, comp button_delivery:::p:118:p}, comp scrollPane1:::p:502:p}, space ::27:x}}}}"
+			"$verticalGroup": "par l {seq {space :::x, par l {par b:t {comp button_remove::b:p:34:p, comp button_view::b:p:34:p}, comp label1::t:p:44:p}, space s:::p, comp scrollPane1:::p:234:p, par l {seq {space s:::p, par l {comp label_totalPrice:::p:44:p, comp button_delivery:::::x}, space :p:30:p}, seq l {space :p:40:p, comp hSpacer1:::p::p, space :::x}}}}"
+		} ) {
+			name: "this"
+			"background": sfield java.awt.Color darkGray
+			"foreground": new java.awt.Color( 204, 0, 0, 255 )
+			"title": "Order"
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane1"
+				"background": sfield java.awt.Color darkGray
+				"opaque": true
+				add( new FormComponent( "javax.swing.JTable" ) {
+					name: "table_item"
+					"model": new com.jformdesigner.model.SwingTableModel( new java.util.Vector, new java.util.Vector {
+						add( "BookID" )
+						add( "Name" )
+						add( "Author" )
+						add( "UnitPrice" )
+						add( "Quantity" )
+					}, new java.util.Vector {
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+					}, new java.util.Vector {
+						add( null )
+						add( null )
+						add( null )
+						add( false )
+						add( false )
+					}, new java.util.Vector {
+						add( new com.jformdesigner.model.SwingTableColumn( null, 60, 5, 70, true ) )
+						add( new com.jformdesigner.model.SwingTableColumn( null, 210, 100, 250, true ) )
+						add( new com.jformdesigner.model.SwingTableColumn( null, 100, 80, 120, true ) )
+						add( null )
+						add( null )
+					} )
+					"font": new java.awt.Font( "Calibri", 0, 16 )
+					"foreground": new java.awt.Color( 0, 102, 102, 255 )
+					"fillsViewportHeight": true
+					"background": sfield java.awt.Color darkGray
+				} )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button_remove"
+				"icon": new com.jformdesigner.model.SwingIcon( 0, "/View/Icon/Shopping-cart-remove-icon.png" )
+				"background": sfield java.awt.Color darkGray
+				"opaque": true
+				"foreground": sfield java.awt.Color darkGray
+				"toolTipText": "remove item"
+				"actionCommand": "remove item"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "clickButton", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button_view"
+				"icon": new com.jformdesigner.model.SwingIcon( 0, "/View/Icon/Shopping-cart-info-icon.png" )
+				"background": sfield java.awt.Color darkGray
+				"foreground": sfield java.awt.Color darkGray
+				"toolTipText": "show item info"
+				"actionCommand": "show item info"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "clickButton", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button_delivery"
+				"text": "delivery"
+				"foreground": new java.awt.Color( 0, 102, 102, 255 )
+				"background": &Color0 new java.awt.Color( 255, 255, 255, 255 )
+				"font": new java.awt.Font( "Calibri", 1, 14 )
+				"icon": new com.jformdesigner.model.SwingIcon( 0, "/View/Icon/Shopping-cart-accept-icon.png" )
+				"horizontalAlignment": 11
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "clickButton", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label_totalPrice"
+				"foreground": new java.awt.Color( 255, 51, 51, 255 )
+				"background": #Color0
+				"font": new java.awt.Font( "Calibri", 1, 20 )
+				"horizontalAlignment": 0
+				"verticalAlignment": 3
+				"text": "000 VND"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": "BOOK ORDER:"
+				"foreground": new java.awt.Color( 0, 102, 102, 255 )
+				"font": new java.awt.Font( "Calibri", 0, 24 )
+			} )
+			add( new FormComponent( "com.jformdesigner.designer.wrapper.HSpacer" ) {
+				name: "hSpacer1"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 5, 0 )
+			"size": new java.awt.Dimension( 555, 425 )
+		} )
+	}
+}

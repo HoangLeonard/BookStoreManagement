@@ -1,0 +1,62 @@
+JFDML JFormDesigner: "8.0.0.0.194" Java: "11.0.13" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class java.awt.GridLayout ) ) {
+			name: "this"
+			"visible": true
+			"title": "Sign In"
+			"defaultCloseOperation": 3
+			"background": new java.awt.Color( 102, 102, 102, 255 )
+			"foreground": sfield java.awt.SystemColor controlHighlight
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq t {space :p:38:p, par t {seq l {comp label_Account:::p:94:p, space :::p, comp textField_Account:::::x}, seq l {comp label_Password:::p:94:p, space :::p, comp textField_Password:::::x}, seq l {comp button_CreateAccount:::p::p, space ::69:x, comp button_SignIn:::p:125:p}, comp textField_Noti::l:::x}, space :p:43:p}}"
+				"$verticalGroup": "par l {seq l {space :::x, par b {comp label_Account::b:p:33:p, comp textField_Account::b::35:x}, space :::p, par b {comp label_Password::b:p:33:p, comp textField_Password::b:p:33:p}, space :::p, par b {comp button_CreateAccount::b:p::p, comp button_SignIn::b:p::p}, space :::p, comp textField_Noti:::p:46:p, space ::37:x}}"
+			} ) {
+				name: "panel1"
+				"background": new java.awt.Color( 51, 51, 51, 255 )
+				"foreground": new java.awt.Color( 255, 255, 255, 255 )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label_Account"
+					"text": "Account"
+					"font": &Font0 new java.awt.Font( "Calibri", 1, 20 )
+					"foreground": &Color0 new java.awt.Color( 204, 204, 204, 255 )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label_Password"
+					"text": "Password"
+					"font": #Font0
+					"foreground": #Color0
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "textField_Account"
+				} )
+				add( new FormComponent( "javax.swing.JPasswordField" ) {
+					name: "textField_Password"
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "button_CreateAccount"
+					"text": "Create new Client Account"
+					"font": &Font1 new java.awt.Font( "Calibri", 1, 14 )
+					"foreground": new java.awt.Color( 51, 51, 51, 255 )
+					"background": sfield java.awt.Color darkGray
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "button_SignIn"
+					"text": "Sign in"
+					"font": #Font1
+					"foreground": new java.awt.Color( 51, 51, 51, 255 )
+					"background": sfield java.awt.Color darkGray
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "textField_Noti"
+					"font": new java.awt.Font( "Arial", 2, 14 )
+				} )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 465, 240 )
+		} )
+	}
+}
